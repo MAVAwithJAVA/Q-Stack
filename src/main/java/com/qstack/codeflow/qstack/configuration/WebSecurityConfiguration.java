@@ -23,7 +23,7 @@ public class WebSecurityConfiguration {
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/signup")
+                .requestMatchers("authentication","/signup")
                 .permitAll()
                 .and()
                 .authorizeHttpRequests()
